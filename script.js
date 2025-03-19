@@ -10,23 +10,23 @@
 
 //############# javascript variables #############//
 // create const (text: string), var (score: number), let (passed: bool)
-const text = "exam, mnknk, kkienjike";
-var score = 15;
-let passed = false;
+// const text = "exam, mnknk, kkienjike";
+// var score = 15;
+// let passed = false;
 
 // ##################   ARRAYS  ######################//
-const jobs = [
-  "teacher",
-  "painter",
-  "farmer",
-  1000,
-  "emma",
-  "justine",
-  "kenneth",
-  "jaden",
-  500,
-  true,
-];
+// const jobs = [
+//   "teacher",
+//   "painter",
+//   "farmer",
+//   1000,
+//   "emma",
+//   "justine",
+//   "kenneth",
+//   "jaden",
+//   500,
+//   true,
+// ];
 
 // ##################   Objects  ######################//
 const transactions = {
@@ -81,4 +81,74 @@ const transactions = {
   table: "versace",
   pet: "MJ",
 };
-console.log(transactions.jobs[3][2].kids[3].names.jet[2][3].champion[3].game);
+// console.log(transactions.jobs[3][2].kids[3].names.jet[2][3].champion[3].game);
+
+// No. 1
+var birthYear = 2004;
+var futureYear = 2025;
+var age1 = futureYear - birthYear;
+console.log(age1);
+
+// No. 2
+var maxAge = 21;
+var estimatedDailyAmount = 50;
+var daysLeft = maxAge * 365;
+var totalAmount = daysLeft * estimatedDailyAmount;
+console.log(totalAmount);
+
+// No. 3
+var celsiusTemperature = 25;
+var fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+console.log(fahrenheitTemperature);
+console.log(`fahrenheit temperature is ${fahrenheitTemperature}`);
+
+var fahToCelsius = ((fahrenheitTemperature - 32) * 5) / 9;
+console.log(`fah to celsius is ${fahToCelsius}`);
+
+// FUNCTIONS
+function balance(income, exp) {
+  const balance = income - exp;
+  console.log(balance);
+}
+// calculateBalance(100, 1000);
+
+const addNum = (num1, num2) => {
+  var sum = num1 + num2;
+  console.log(sum);
+};
+addNum(5, 10);
+// No. 4
+// x = job
+// y = location
+// z = partner
+// n = kids
+function tellFortune(x, y, z, n) {
+  console.log(
+    `you will be a ${x} in ${y} and married to ${z} and with ${n} kids.`
+  );
+}
+
+tellFortune("software Enginner", "Dubai", "Obi", 3);
+tellFortune("Lawyer", "America", "Emily", 4);
+tellFortune("Doctor", "Chicago", "lilian", 5);
+
+// No.5
+function calculateDogAge(PuppyAge) {
+  const calculateDogAge = PuppyAge * 7;
+  console.log(`my doggie is ${calculateDogAge} years old`);
+}
+calculateDogAge(3);
+calculateDogAge(6);
+calculateDogAge(9);
+
+// No. 6
+function calculateSupply(age, amountPerDay) {
+  const maxAge = 80;
+  const lifeConsumption = (maxAge - age) * 365 * amountPerDay;
+  console.log(
+    `you will need ${lifeConsumption} to last you until the ripe old age of ${maxAge}.`
+  );
+}
+calculateSupply(30, 5);
+calculateSupply(15, 3);
+calculateSupply(20, 2);
